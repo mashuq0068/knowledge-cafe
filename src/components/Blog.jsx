@@ -13,7 +13,7 @@ const Blog = ( { blog, handleBookMarks , handleMarkRead } ) => {
             <img onClick={() => { handleBookMarks(blog) }} className="cursor-pointer" src="./Frame.png" alt="" />
             <p>{title}</p>
             <p>#{hashtags[0]} #{hashtags[1]}</p>
-            <p onClick={handleMarkRead} className="text-blue-700 underline cursor-pointer">Mark as read</p>
+            <p onClick={()=>{handleMarkRead(reading_time ,title)}} className="text-blue-700 underline cursor-pointer">Mark as read</p>
             <br /><br />
 
 
